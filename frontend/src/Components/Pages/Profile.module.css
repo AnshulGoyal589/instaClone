@@ -1,0 +1,40 @@
+.image{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-left:450px;
+    margin-top: 50px;
+
+}
+.username{
+    color: white;
+    margin-left: 720px;
+   font-size: 25px;
+    position: relative;
+    bottom: 210px;
+    display: flex;
+    width: fit-content;
+    margin-top: 40px;
+    gap: 28px;
+}
+.username2{
+    color: white;
+    margin-left: 720px;
+   font-size: 17px;
+   position: relative;
+   bottom: 187px;
+   width: fit-content;
+   display: flex;
+   gap: 20px;
+}
+.username3{
+    color: white;
+    margin-left: 720px;
+    margin-top: 20px;
+   font-size: 17px;
+   position: relative;
+   bottom: 187px;
+   width: fit-content;
+   display: flex;
+   gap: 20px;
+}

@@ -1,0 +1,53 @@
+/* MainNavigationBar.module.css */
+
+/* Sidebar styles */
+.sidebar {
+    width: 16.5vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Logo styles */
+  .logo {
+    margin: 30px;
+  }
+  
+  /* Home icon styles */
+  .home {
+    display: inline-block;
+    width: fit-content;
+  }
+  
+  /* Home content styles */
+  .homeContent {
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+    color: white;
+    margin-left: 16px;
+  }
+  
+  /* Home container styles */
+  .homeContainer {
+    margin-top: 40px;
+    width: 100%;
+    padding-left: 65px;
+    font-size: 25px;
+  }
+  
+  /* Head (Register/Login) styles */
+  .head {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-right: 20px;
+    margin-top: 50px;
+    font-size: 25px;
+  }
+  

@@ -1,0 +1,14 @@
+.review{
+    /* margin-left: 200px; */
+    color:white;
+    border:1px solid white;
+    display: inline-block;
+    width: 100%;
+    padding: 13px;
+}
+.owner{
+    font-size: 25px;
+}
+.text{
+    text-align: end;
+}

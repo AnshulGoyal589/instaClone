@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    border:2px solid white;
+    align-items: center;
+    width:300px;
+    position: fixed;
+    height: 50vh;
+    margin-left: 870px;
+    margin-top:60px;
+    padding: 15px;
+    overflow: scroll;
+}

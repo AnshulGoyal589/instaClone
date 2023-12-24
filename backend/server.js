@@ -46,7 +46,8 @@ app.use(express.urlencoded({ extended: true }));
 const authApi = require('./apis/authApi'); 
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  // origin: 'http://localhost:3000',
+  origin: 'https://insta-clone-frontend-g303.onrender.com',
 }));
 app.use(cookieParser('keyboardcat'));
 app.use(session(sessionConfig));

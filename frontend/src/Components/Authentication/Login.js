@@ -24,7 +24,8 @@ const Login = (props) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:8000/auth/login', formData);
+      // const response = await axios.post('http://localhost:8000/auth/login', formData);
+      const response = await axios.post('https://instagram-clone-98y7.onrender.com//auth/login', formData);
       props.setUserDetails(response.data.user);
       navigate('/');
       console.log('Login successful:', response.data.user);

@@ -27,7 +27,8 @@ const Profile = (props) => {
       console.log("ALPHA TEMP:   ",props.userData);
   
       try {
-        const response = await axios.post('http://localhost:8000/auth/postShow', postTemp);
+        const response = await axios.post('https://instagram-clone-98y7.onrender.com/auth/postShow', postTemp);
+        // const response = await axios.post('http://localhost:8000/auth/postShow', postTemp);
         setPostData(response.data);
           console.log('Profile post fething successfull:', response.data);
         } catch (error) {
@@ -50,7 +51,8 @@ const Profile = (props) => {
     // console.log("POST TEMP:   ",postTemp);
 
     try {
-      const response = await axios.post('http://localhost:8000/auth/followShow', followTemp);
+      const response = await axios.post('https://instagram-clone-98y7.onrender.com/auth/followShow', followTemp);
+      // const response = await axios.post('http://localhost:8000/auth/followShow', followTemp);
       setFollowers(response.data);
         console.log('Followed successfull:', response.data);
       } catch (error) {

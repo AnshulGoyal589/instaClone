@@ -16,7 +16,8 @@ const PostSend = (props) => {
     formData.append('id', uuid()); // Append the file
 
     try {
-      const response = await axios.post('http://localhost:8000/auth/send', formData, {
+      // const response = await axios.post('http://localhost:8000/auth/send', formData, {
+      const response = await axios.post('https://instagram-clone-98y7.onrender.com/auth/send', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

@@ -42,7 +42,8 @@ const PostCard = (props) => {
       // Convert the formDataObject to JSON
       const formDataJSON = JSON.stringify(formDataObject);
     
-      const response = await axios.post('http://localhost:8000/auth/updateLikes', formDataJSON, {
+      const response = await axios.post('https://instagram-clone-98y7.onrender.com/auth/updateLikes', formDataJSON, {
+      // const response = await axios.post('http://localhost:8000/auth/updateLikes', formDataJSON, {
         headers: {
           'Content-Type': 'application/json'
         }
@@ -69,7 +70,8 @@ const PostCard = (props) => {
       // Convert the formDataObject to JSON
       const formDataJSON = JSON.stringify(formDataObject);
     
-      const response = await axios.post('http://localhost:8000/auth/updateLikesn', formDataJSON, {
+      const response = await axios.post('https://instagram-clone-98y7.onrender.com/auth/updateLikesn', formDataJSON, {
+      // const response = await axios.post('http://localhost:8000/auth/updateLikesn', formDataJSON, {
         headers: {
           'Content-Type': 'application/json'
         }
@@ -107,7 +109,8 @@ const PostCard = (props) => {
       }
 
       try {
-        const response = await axios.post('http://localhost:8000/auth/review', reviewData);
+        const response = await axios.post('https://instagram-clone-98y7.onrender.com/review', reviewData);
+        // const response = await axios.post('http://localhost:8000/auth/review', reviewData);
         console.log('Review successful:', response.data.user);
       } catch (error) {
         console.error('Error during review submission:', error.response ? error.response.data : 'Unknown error');

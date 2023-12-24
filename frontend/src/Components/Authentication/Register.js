@@ -18,7 +18,8 @@ const Register = () => {
     formData.append('desc', e.target.desc.value); 
 
     try { 
-      const response = await axios.post('http://localhost:8000/auth/register', formData, {
+      const response = await axios.post('https://instagram-clone-98y7.onrender.com/auth/register', formData, {
+      // const response = await axios.post('http://localhost:8000/auth/register', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

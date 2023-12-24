@@ -15,7 +15,8 @@ const Home = (props) => {
   let [i,setI]=useState(0);
   const fetchData2 = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/auth/homePage');
+      const response = await axios.get('https://instagram-clone-98y7.onrender.com/auth/homePage');
+      // const response = await axios.get('http://localhost:8000/auth/homePage');
       setHomeData(response.data);
       setLoading(false);
     } catch (error) {
@@ -28,7 +29,8 @@ const Home = (props) => {
     // Define an async function to fetch data
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/auth/homePage');
+        const response = await axios.get('https://instagram-clone-98y7.onrender.com/auth/homePage');
+        // const response = await axios.get('http://localhost:8000/auth/homePage');
         setHomeData(response.data);
         setLoading(false);
       } catch (error) {
@@ -43,7 +45,8 @@ const Home = (props) => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/auth/userDetails');
+        const response = await axios.get('https://instagram-clone-98y7.onrender.com/auth/userDetails');
+        // const response = await axios.get('http://localhost:8000/auth/userDetails');
         setUserData(response.data);
         // setLoading(false);
       } catch (error) {
@@ -65,7 +68,8 @@ const Home = (props) => {
     
     
     try {
-    const response = await axios.post('http://localhost:8000/auth/reviewShow', reviewTemp);
+    const response = await axios.post('https://instagram-clone-98y7.onrender.com/auth/reviewShow', reviewTemp);
+    // const response = await axios.post('http://localhost:8000/auth/reviewShow', reviewTemp);
     setReviewData(response.data);
       console.log('Review successful:', response.data);
     } catch (error) {
